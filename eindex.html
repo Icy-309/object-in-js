@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ .mai{
+    display: flex;
+    justify-content: space-around;
+    
+ }
+ .first{
+    display: inline;
+
+ }
+ .second{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-around;
+ }
+ .third{
+    display: flex;
+    justify-content: space-around;
+ }
+ .but{
+    width: 100px;
+    height:35px;
+    color: white;
+    background-color: rgb(78, 11, 78);
+ }
+ button{
+    width: 100px;
+    height:35px;
+    color: rgb(78, 11, 78);
+    background-color: white;
+ }
+ .smallwatch{
+   display: flex;
+   justify-content: space-around;
+ }
+ .bigimg{
+   width: 300px;
+   height: 250px;
+ }
+ .write{
+      
+ }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">
+        Top Features of the Watch       
+    </h1>
+    <p  style="text-align: center;">Featuresof the watch is looking vigoroiusly nice</p>
+    <div class="mai">
+  <div watch>
+    <img class="bigimg" width="270px" src="burger-png-png-images-yellow-images-12.png" alt="watch">
+    <div class="smallwatch">
+    <img class="first" width="60px" src="burger.png" alt="">
+    <img class="second"  width="60px"  width="60px" src="fine burger.jpeg" alt="">
+    <img class="third" width="60px" src="burger-png-the-eatery-steak-special-16.png" alt="">
+    <img class="fourth" width="60px" src="burger-png-png-images-yellow-images-12.png" alt="">
+    </div>
+  </div>
+  <div class="write">
+    <h1 class="raf">MultiFunction Watch</h1>
+    <p class="pa">multifunction watches are the best so there for we thank the lord so much </p>
+     <div class="first"><b>Name</b>  <div class="second"><p class="un">$boots</p> <p class="lol">New</p></div></div>
+     <div class="first"><b>Size</b>  <div class="second"><p class="tro">45</p> <p class="quatre">New</p></div></div>
+     <div class="first"><b>price</b>  <div class="second"><p class="five">$10</p> <p class="six">New</p></div></div>
+     <div class="third">
+        <button class=" but">
+            Buy now 
+        </button>
+        <button>
+         Order This
+          
+        </button>
+     </div>
+  </div>
+  
+   
+    </div>
+    <script>
+      let select = [
+         {
+            id: "one",
+            img: "burger.png",
+            head:"The small But mighty",
+            para: " The burger will do good to your stomach",
+            desone: "belle full",
+            detwo: "tasty",
+            desthree: "5mm",
+            desfour: "new",
+            desfive: "$3",
+            dessix: "great taste",
+
+         },
+         {
+            id: "two",
+            img: "fine burger.jpeg",
+            head:"pretty burger",
+            para: " stomach LOves this ",
+            desone: "too small",
+            detwo: "yummy",
+            desthree: "12mm",
+            desfour: "new",
+            desfive: "$4",
+            dessix: "taste and taste again ",
+         
+         },
+         {
+            id: "three",
+            img: "burger-png-the-eatery-steak-special-16.png",
+            head:"Chips and burger",
+            para: " chipssssssss ",
+            desone: "extremely  fair",
+            detwo: "o la, la",
+            desthree: "22mm",
+            desfour: "new",
+            desfive: "$32",
+            dessix: "your taste bods love this  ",
+         
+         },
+         {
+            id: "four",
+            img: "burger-png-png-images-yellow-images-12.png",
+            head:"The supreme burger ",
+            para: " this one na Ododgwu burger  ",
+            desone: "SUPER- DUPER fair",
+            detwo: "creamyy",
+            desthree: "29mm",
+            desfour: "this one dey",
+            desfive: "$50",
+            dessix: "craving for this   ",
+         
+         },
+      ]
+   // these will be the buttons declarations//
+       let one =  document.querySelector(".first")
+       let two =  document.querySelector(".second")
+       let three =  document.querySelector(".third")
+       let four =  document.querySelector(".fourth")
+      // these are the objects //
+       let car = document.querySelector(".raf")
+       let rat = document.querySelector(".pa")
+       let rite = document.querySelector(".un")
+       let spoon = document.querySelector(".lol")
+       let roon = document.querySelector(".tro")
+       let mose = document.querySelector(".quatre")
+       let bose = document.querySelector(".five")
+       let cran = document.querySelector(".six")
+       let raven = document.querySelector(".bigimg");
+
+       one.onclick = function (){
+         raven.src = select[0].img;
+         car.innerHTML = select[0].head;
+         rat.innerHTML = select[0].para;
+         rite.innerHTML = select[0].desone;
+         spoon.innerHTML = select[0].detwo;
+         roon.innerHTML = select[0].desthree;
+         mose.innerHTML = select[0].desfour;
+         bose.innerHTML = select[0].desfive;
+         cran.innerHTML = select[0].dessix;
+
+       }
+       two.onclick = function (){
+         raven.src = select[1].img;
+         car.innerHTML = select[1].head;
+         rat.innerHTML = select[1].para;
+         rite.innerHTML = select[1].desone;
+         spoon.innerHTML = select[1].detwo;
+         roon.innerHTML = select[1].desthree;
+         mose.innerHTML = select[1].desfour;
+         bose.innerHTML = select[1].desfive;
+         cran.innerHTML = select[1].dessix;
+      }
+      three.onclick = function (){
+         raven.src = select[2].img;
+         car.innerHTML = select[2].head;
+         rat.innerHTML = select[2].para;
+         rite.innerHTML = select[2].desone;
+         spoon.innerHTML = select[2].detwo;
+         roon.innerHTML = select[2].desthree;
+         mose.innerHTML = select[2].desfour;
+         bose.innerHTML = select[2].desfive;
+         cran.innerHTML = select[2].dessix;
+       }
+       four.onclick = function (){
+         raven.src = select[3].img;
+         car.innerHTML = select[3].head;
+         rat.innerHTML = select[3].para;
+         rite.innerHTML = select[3].desone;
+         spoon.innerHTML = select[3].detwo;
+         roon.innerHTML = select[3].desthree;
+         mose.innerHTML = select[3].desfour;
+         bose.innerHTML = select[3].desfive;
+         cran.innerHTML = select[3].dessix;
+       }
+      
+
+
+    </script>
+</body>
+</html>
